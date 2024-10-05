@@ -23,3 +23,5 @@ The program will only use 6-bit keys. That means that a key will need to have a 
 
 Using the bit delay file my program will perform a probePhase() where it will pass known keys to an encryption(str, key) method.  This encryption method will add proper delays depending on the bits used on the key.  The key can only be 6 bits long.  During this probe phase the program will store relevant information on the different keys passed and the "cache latency" that is incurred after using these keys.
 Using these cache profile the program will output the set of key(s) that are in the +/- 0.05 seconds ballpark of the cache latency passed as input.
+
+python side-channel.py bit_delay.csv 0.70
